@@ -4,8 +4,8 @@
   <a href="https://opensource.org/licenses/MIT">
     <img src="https://img.shields.io/github/license/radnive/flutter_dashedcircularprogressbar?logo=github" />
   </a>
-  <a href="https://pub.dev/packages/simple_circular_progress_bar/changelog">
-    <img src="https://img.shields.io/badge/version-0.0.1-blueviolet" />
+  <a href="https://pub.dev/packages/dashed_circular_progress_bar/changelog">
+    <img src="https://img.shields.io/badge/version-0.0.4-blueviolet" />
   </a>
   <a href="https://docs.flutter.dev/development/tools/sdk/releases">
     <img src="https://img.shields.io/badge/flutter-2.17.5-blue" />
@@ -31,7 +31,7 @@ Open source flutter package, Dashed circular progress bar for flutter apps.
 Add this line to the **pubspec.yaml** file below the dependencies:
 ```yaml
 dependencies:
-  dashed_circular_progress_bar: ^0.0.3
+  dashed_circular_progress_bar: ^0.0.4
 ```
 
 Now to use, import this package into the desired file as follows:
@@ -183,24 +183,17 @@ For example to make a progress bar in the shape of the first image (first row, f
 
 ```dart
 DashedCircularProgressBar.aspectRatio(
-  aspectRatio: 1, // width ÷ height
-  progress: 180,
-  maxProgress: 360,
-  startAngle: -27.5,
-  foregroundColor: Colors.redAccent,
-  backgroundColor: const Color(0xffeeeeee),
+  aspectRatio: 1, // width / height
+  progress: 60,
+  startAngle: 90,
+  sweepAngle: 90,
+  corners: StrokeCap.butt,
   foregroundStrokeWidth: 7,
   backgroundStrokeWidth: 7,
-  foregroundGapSize: 5,
-  foregroundDashSize: 55,
-  backgroundGapSize: 5,
-  backgroundDashSize: 55,
-  animation: true,
-  child: const Icon(
-    Icons.favorite,
-    color: Colors.redAccent,
-    size: 126
-  ),
+  circleCenterAlignment: Alignment.topLeft,
+  foregroundColor: Colors.white,
+  backgroundColor: const Color(0x22000000),
+  animation: true
 )
 ```
 
@@ -225,7 +218,7 @@ DashedCircularProgressBar.aspectRatio(
 |**backgroundDashSize** <br>*double*|0|Background arc dash size.|
 |**seekSize** <br>*double*|0|Progress bar seek size.|
 |**seekColor** <br>*Color*|Colors.blue|Progress bar seek color.|
-|**circleCenterAlignment** <br>*Alignment*|Alignment.center|Center of progress bar.|
+|**circleCenterAlignment** <br>*Alignment*|Alignment.center|Align center of progress bar.|
 |**animation** <br>*bool*|false|Active progress bar animation.|
 |**animationDuration** <br>*Duration*|Duration(seconds: 1)|Progress bar animation duration.|
 |**animationCurve** <br>*Curve*|Curves.easeOut|Progress bar animation curve.|

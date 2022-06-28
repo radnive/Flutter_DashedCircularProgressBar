@@ -56,7 +56,7 @@ class DashedCircularProgressBar extends StatelessWidget {
   /// Progress bar seek color.
   final Color seekColor;
 
-  /// Center of progress bar.
+  /// Align center of progress bar.
   final Alignment circleCenterAlignment;
 
   /// Active progress bar animation.

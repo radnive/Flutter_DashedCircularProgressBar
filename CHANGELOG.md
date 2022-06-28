@@ -9,3 +9,7 @@
 ## 0.0.3: 27 June 2022
 
 * Fix README.md gif files.
+
+## 0.0.4: 27 June 2022
+
+* Fix example 5 code in README.md.
