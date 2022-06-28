@@ -31,7 +31,7 @@ Open source flutter package, Dashed circular progress bar for flutter apps.
 Add this line to the **pubspec.yaml** file below the dependencies:
 ```yaml
 dependencies:
-  dashed_circular_progress_bar: ^0.0.1
+  dashed_circular_progress_bar: ^0.0.3
 ```
 
 Now to use, import this package into the desired file as follows:
@@ -43,7 +43,7 @@ import 'package:dashed_circular_progress_bar/dashed_circular_progress_bar.dart';
 Here are some simple examples you can use to create this package:
 
 ### Example 1 - Simple progress bar
-<img width="300" height="300" src="https://github.com/radnive/Flutter_DashedCircularProgressBar/blob/main/example/simple_example.gif" alt="simple_example_gif">
+<img width="300" height="300" src="https://raw.githubusercontent.com/radnive/Flutter_DashedCircularProgressBar/main/example/simple_example.gif" alt="simple_example_gif">
 
 First of all, to access the amount of progress when doing animation, you need to define a **ValueNotifier**:
 
@@ -81,7 +81,7 @@ DashedCircularProgressBar.aspectRatio(
 ```
 
 ### Example 2 - Dashed background progress bar
-<img width="300" height="160" src="https://github.com/radnive/Flutter_DashedCircularProgressBar/blob/main/example/dashed_background_example.gif" alt="simple_example_gif">
+<img width="300" height="160" src="https://raw.githubusercontent.com/radnive/Flutter_DashedCircularProgressBar/main/example/dashed_background_example.gif" alt="simple_example_gif">
 
 ```dart
 DashedCircularProgressBar.aspectRatio(
@@ -103,7 +103,7 @@ DashedCircularProgressBar.aspectRatio(
 ```
 
 ### Example 3 - More complex progress bar
-<img width="300" height="305" src="https://github.com/radnive/Flutter_DashedCircularProgressBar/blob/main/example/more_complex_example.gif" alt="more_complex_example_gif">
+<img width="300" height="305" src="https://raw.githubusercontent.com/radnive/Flutter_DashedCircularProgressBar/main/example/more_complex_example.gif" alt="more_complex_example_gif">
 
 ```dart
 DashedCircularProgressBar.aspectRatio(
@@ -149,7 +149,7 @@ DashedCircularProgressBar.aspectRatio(
 
 You can also use the desired dimensions instead of aspect ratio.
 
-<img width="300" height="300" src="https://github.com/radnive/Flutter_DashedCircularProgressBar/blob/main/example/dashed_example.gif" alt="dashed_example_gif">
+<img width="300" height="300" src="https://raw.githubusercontent.com/radnive/Flutter_DashedCircularProgressBar/main/example/dashed_example.gif" alt="dashed_example_gif">
 
 ```dart
 DashedCircularProgressBar.square(
@@ -177,7 +177,7 @@ DashedCircularProgressBar.square(
 ### Example 5 - Play with circle center alignment
 By changing the center, you can specify the location of the progress bar.
 
-![play_with_circle_center_alignment_example.png](https://github.com/radnive/Flutter_DashedCircularProgressBar/blob/main/example/play_with_circle_center_alignment_example.png)
+![play_with_circle_center_alignment_example.png](https://raw.githubusercontent.com/radnive/Flutter_DashedCircularProgressBar/main/example/play_with_circle_center_alignment_example.png)
 
 For example to make a progress bar in the shape of the first image (first row, first image from the left):
 
