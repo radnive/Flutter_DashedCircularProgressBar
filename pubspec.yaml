@@ -1,6 +1,6 @@
 name: dashed_circular_progress_bar
 description: Dashed circular progress bar for flutter apps.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/radnive/Flutter_DashedCircularProgressBar
 
 environment:
