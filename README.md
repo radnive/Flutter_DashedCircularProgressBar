@@ -31,7 +31,7 @@ Open source flutter package, Dashed circular progress bar for flutter apps.
 Add this line to the **pubspec.yaml** file below the dependencies:
 ```yaml
 dependencies:
-  dashed_circular_progress_bar: ^0.0.4
+  dashed_circular_progress_bar: ^0.0.5
 ```
 
 Now to use, import this package into the desired file as follows:
@@ -70,9 +70,10 @@ DashedCircularProgressBar.aspectRatio(
       valueListenable: _valueNotifier,
       builder: (_, double value, __) => Text(
         '${value.toInt()}%',
-        style: Types.of(context).headline2!.copyWith(
-            color: Palette.of(context).onBackground,
-            fontWeight: FontWeight.w600
+        style: const TextStyle(
+          color: Colors.black,
+          fontWeight: FontWeight.w300,
+          fontSize: 60
         ),
       ),
     ),
@@ -90,7 +91,7 @@ DashedCircularProgressBar.aspectRatio(
   startAngle: 270,
   sweepAngle: 180,
   circleCenterAlignment: Alignment.bottomCenter,
-  foregroundColor: Palette.of(context).onBackground,
+  foregroundColor: Colors.black,
   backgroundColor: const Color(0xffeeeeee),
   foregroundStrokeWidth: 3,
   backgroundStrokeWidth: 2,
@@ -127,15 +128,18 @@ DashedCircularProgressBar.aspectRatio(
         children: [
           Text(
             '${value.toInt()}%',
-            style: Types.of(context).headline2!.copyWith(
+            style: const TextStyle(
               color: Colors.black,
-              fontWeight: FontWeight.w600
+              fontWeight: FontWeight.w300,
+              fontSize: 60
             ),
           ),
           Text(
             'Accuracy',
-            style: Types.of(context).subtitle1!.apply(
-              color: Colors.grey
+            style: const TextStyle(
+              color: Color(0xffeeeeee),
+              fontWeight: FontWeight.w400,
+              fontSize: 16
             ),
           ),
         ],
@@ -198,31 +202,31 @@ DashedCircularProgressBar.aspectRatio(
 ```
 
 # Parameters description
-|Parameter|Default|Description|
-|---------|-------|-----------|
-|**width** <br>*double*|0|Progress bar width.|
-|**height** <br>*double*|0|Progress bar height.|
-|**aspectRatio** <br>*double*|0|Progress aspect ratio.|
-|**progress** <br>*double*|0|Current value of progress bar.|
-|**maxProgress** <br>*double*|100|Maximum value of progress.|
-|**startAngle** <br>*double*|0|The starting angle of the arc.|
-|**sweepAngle** <br>*double*|360|The sweep angle of the arc.|
-|**foregroundStrokeWidth** <br>*double*|2|Foreground arc thickness.|
-|**backgroundStrokeWidth** <br>*double*|2|Background arc thickness.|
-|**foregroundColor** <br>*Color*|Colors.blue|Foreground arc color.|
-|**backgroundColor** <br>*Color*|Colors.white|Background arc color.|
-|**corners** <br>*StrokeCap*|StrokeCap.round|Styles to use for arcs endings.|
-|**foregroundGapSize** <br>*double*|0|Foreground arc gap size.|
-|**foregroundDashSize** <br>*double*|0|Foreground arc dash size.|
-|**backgroundGapSize** <br>*double*|0|Background arc gap size.|
-|**backgroundDashSize** <br>*double*|0|Background arc dash size.|
-|**seekSize** <br>*double*|0|Progress bar seek size.|
-|**seekColor** <br>*Color*|Colors.blue|Progress bar seek color.|
-|**circleCenterAlignment** <br>*Alignment*|Alignment.center|Align center of progress bar.|
-|**animation** <br>*bool*|false|Active progress bar animation.|
-|**animationDuration** <br>*Duration*|Duration(seconds: 1)|Progress bar animation duration.|
-|**animationCurve** <br>*Curve*|Curves.easeOut|Progress bar animation curve.|
-|**onAnimationEnd** <br>*void Function()?*|null|This function is called when animation ended.|
-|**ltr** <br>*bool*|true|Specifies how to draw arcs from right to left or vice versa.|
-|**child** <br>*Widget?*|null|This widget is placed on the progress bar.|
-|**valueNotifier** <br>*ValueNotifier?*|null|Animated value notifier.|
+| Parameter                                 | Default              | Description                                                  |
+|-------------------------------------------|----------------------|--------------------------------------------------------------|
+| **width** <br>*double*                    | 0                    | Progress bar width.                                          |
+| **height** <br>*double*                   | 0                    | Progress bar height.                                         |
+| **aspectRatio** <br>*double*              | 0                    | Progress aspect ratio.                                       |
+| **progress** <br>*double*                 | 0                    | Current value of progress bar.                               |
+| **maxProgress** <br>*double*              | 100                  | Maximum value of progress.                                   |
+| **startAngle** <br>*double*               | 0                    | The starting angle of the arc.                               |
+| **sweepAngle** <br>*double*               | 360                  | The sweep angle of the arc.                                  |
+| **foregroundStrokeWidth** <br>*double*    | 2                    | Foreground arc thickness.                                    |
+| **backgroundStrokeWidth** <br>*double*    | 2                    | Background arc thickness.                                    |
+| **foregroundColor** <br>*Color*           | Colors.blue          | Foreground arc color.                                        |
+| **backgroundColor** <br>*Color*           | Colors.white         | Background arc color.                                        |
+| **corners** <br>*StrokeCap*               | StrokeCap.round      | Styles to use for arcs endings.                              |
+| **foregroundGapSize** <br>*double*        | 0                    | Foreground arc gap size.                                     |
+| **foregroundDashSize** <br>*double*       | 0                    | Foreground arc dash size.                                    |
+| **backgroundGapSize** <br>*double*        | 0                    | Background arc gap size.                                     |
+| **backgroundDashSize** <br>*double*       | 0                    | Background arc dash size.                                    |
+| **seekSize** <br>*double*                 | 0                    | Progress bar seek size.                                      |
+| **seekColor** <br>*Color*                 | Colors.blue          | Progress bar seek color.                                     |
+| **circleCenterAlignment** <br>*Alignment* | Alignment.center     | Align center of progress bar.                                |
+| **animation** <br>*bool*                  | false                | Active progress bar animation.                               |
+| **animationDuration** <br>*Duration*      | Duration(seconds: 1) | Progress bar animation duration.                             |
+| **animationCurve** <br>*Curve*            | Curves.easeOut       | Progress bar animation curve.                                |
+| **onAnimationEnd** <br>*void Function()?* | null                 | This function is called when animation ended.                |
+| **ltr** <br>*bool*                        | true                 | Specifies how to draw arcs from right to left or vice versa. |
+| **child** <br>*Widget?*                   | null                 | This widget is placed on the progress bar.                   |
+| **valueNotifier** <br>*ValueNotifier?*    | null                 | Animated value notifier.                                     |

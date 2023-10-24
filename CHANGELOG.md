@@ -13,3 +13,7 @@
 ## 0.0.4: 27 June 2022
 
 * Fix example 5 code in README.md.
+
+## 0.0.5: 24 October 2023
+
+* Upgrade Flutter version.
