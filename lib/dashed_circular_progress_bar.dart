@@ -82,106 +82,110 @@ class DashedCircularProgressBar extends StatelessWidget {
   final ValueNotifier<double>? valueNotifier;
 
   /// Create progress bar depend.
-  const DashedCircularProgressBar({
-    Key? key,
-    required this.width,
-    required this.height,
-    this.progress = 0,
-    this.maxProgress = 100,
-    this.startAngle = 0,
-    this.sweepAngle = 360,
-    this.foregroundStrokeWidth = 2,
-    this.backgroundStrokeWidth = 2,
-    this.foregroundColor = Colors.blue,
-    this.backgroundColor = Colors.white,
-    this.corners = StrokeCap.round,
-    this.foregroundGapSize = 0,
-    this.foregroundDashSize = 0,
-    this.backgroundGapSize = 0,
-    this.backgroundDashSize = 0,
-    this.seekSize = 0,
-    this.seekColor = Colors.blue,
-    this.circleCenterAlignment = Alignment.center,
-    this.animation = false,
-    this.animationDuration = const Duration(milliseconds: 1000),
-    this.animationCurve = Curves.easeOut,
-    this.onAnimationEnd,
-    this.ltr = true,
-    this.child,
-    this.valueNotifier
-  }) : aspectRatio = 0, super(key: key);
+  const DashedCircularProgressBar(
+      {Key? key,
+      required this.width,
+      required this.height,
+      this.progress = 0,
+      this.maxProgress = 100,
+      this.startAngle = 0,
+      this.sweepAngle = 360,
+      this.foregroundStrokeWidth = 2,
+      this.backgroundStrokeWidth = 2,
+      this.foregroundColor = Colors.blue,
+      this.backgroundColor = Colors.white,
+      this.corners = StrokeCap.round,
+      this.foregroundGapSize = 0,
+      this.foregroundDashSize = 0,
+      this.backgroundGapSize = 0,
+      this.backgroundDashSize = 0,
+      this.seekSize = 0,
+      this.seekColor = Colors.blue,
+      this.circleCenterAlignment = Alignment.center,
+      this.animation = false,
+      this.animationDuration = const Duration(milliseconds: 1000),
+      this.animationCurve = Curves.easeOut,
+      this.onAnimationEnd,
+      this.ltr = true,
+      this.child,
+      this.valueNotifier})
+      : aspectRatio = 0,
+        super(key: key);
 
   /// Create square progress bar depend on dimensions.
-  const DashedCircularProgressBar.square({
-    Key? key,
-    required double dimensions,
-    this.progress = 0,
-    this.maxProgress = 100,
-    this.startAngle = 0,
-    this.sweepAngle = 360,
-    this.foregroundStrokeWidth = 2,
-    this.backgroundStrokeWidth = 2,
-    this.foregroundColor = Colors.blue,
-    this.backgroundColor = Colors.white,
-    this.corners = StrokeCap.round,
-    this.foregroundGapSize = 0,
-    this.foregroundDashSize = 0,
-    this.backgroundGapSize = 0,
-    this.backgroundDashSize = 0,
-    this.seekSize = 0,
-    this.seekColor = Colors.blue,
-    this.circleCenterAlignment = Alignment.center,
-    this.animation = false,
-    this.animationDuration = const Duration(milliseconds: 1000),
-    this.animationCurve = Curves.easeOut,
-    this.onAnimationEnd,
-    this.ltr = true,
-    this.child,
-    this.valueNotifier
-  }) : aspectRatio = 0, width = dimensions, height = dimensions, super(key: key);
+  const DashedCircularProgressBar.square(
+      {Key? key,
+      required double dimensions,
+      this.progress = 0,
+      this.maxProgress = 100,
+      this.startAngle = 0,
+      this.sweepAngle = 360,
+      this.foregroundStrokeWidth = 2,
+      this.backgroundStrokeWidth = 2,
+      this.foregroundColor = Colors.blue,
+      this.backgroundColor = Colors.white,
+      this.corners = StrokeCap.round,
+      this.foregroundGapSize = 0,
+      this.foregroundDashSize = 0,
+      this.backgroundGapSize = 0,
+      this.backgroundDashSize = 0,
+      this.seekSize = 0,
+      this.seekColor = Colors.blue,
+      this.circleCenterAlignment = Alignment.center,
+      this.animation = false,
+      this.animationDuration = const Duration(milliseconds: 1000),
+      this.animationCurve = Curves.easeOut,
+      this.onAnimationEnd,
+      this.ltr = true,
+      this.child,
+      this.valueNotifier})
+      : aspectRatio = 0,
+        width = dimensions,
+        height = dimensions,
+        super(key: key);
 
   /// Create progress bar depend on aspect ratio.
-  const DashedCircularProgressBar.aspectRatio({
-    Key? key,
-    required this.aspectRatio,
-    this.progress = 0,
-    this.maxProgress = 100,
-    this.startAngle = 0,
-    this.sweepAngle = 360,
-    this.foregroundStrokeWidth = 2,
-    this.backgroundStrokeWidth = 2,
-    this.foregroundColor = Colors.blue,
-    this.backgroundColor = Colors.white,
-    this.corners = StrokeCap.round,
-    this.foregroundGapSize = 0,
-    this.foregroundDashSize = 0,
-    this.backgroundGapSize = 0,
-    this.backgroundDashSize = 0,
-    this.seekSize = 0,
-    this.seekColor = Colors.blue,
-    this.circleCenterAlignment = Alignment.center,
-    this.animation = false,
-    this.animationDuration = const Duration(milliseconds: 1000),
-    this.animationCurve = Curves.easeOut,
-    this.onAnimationEnd,
-    this.ltr = true,
-    this.child,
-    this.valueNotifier
-  }) : width = 0, height = 0, super(key: key);
+  const DashedCircularProgressBar.aspectRatio(
+      {Key? key,
+      required this.aspectRatio,
+      this.progress = 0,
+      this.maxProgress = 100,
+      this.startAngle = 0,
+      this.sweepAngle = 360,
+      this.foregroundStrokeWidth = 2,
+      this.backgroundStrokeWidth = 2,
+      this.foregroundColor = Colors.blue,
+      this.backgroundColor = Colors.white,
+      this.corners = StrokeCap.round,
+      this.foregroundGapSize = 0,
+      this.foregroundDashSize = 0,
+      this.backgroundGapSize = 0,
+      this.backgroundDashSize = 0,
+      this.seekSize = 0,
+      this.seekColor = Colors.blue,
+      this.circleCenterAlignment = Alignment.center,
+      this.animation = false,
+      this.animationDuration = const Duration(milliseconds: 1000),
+      this.animationCurve = Curves.easeOut,
+      this.onAnimationEnd,
+      this.ltr = true,
+      this.child,
+      this.valueNotifier})
+      : width = 0,
+        height = 0,
+        super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    if(aspectRatio != 0) {
+    if (aspectRatio != 0) {
       return AspectRatio(
           aspectRatio: aspectRatio,
-          child: _flipHorizontal(_buildProgressBar())
-      );
+          child: _flipHorizontal(_buildProgressBar()));
     } else {
       return SizedBox(
           width: width,
           height: height,
-          child: _flipHorizontal(_buildProgressBar())
-      );
+          child: _flipHorizontal(_buildProgressBar()));
     }
   }
 
@@ -200,9 +204,9 @@ class DashedCircularProgressBar extends StatelessWidget {
           // Create widget.
           return CustomPaint(
               foregroundPainter: _buildPainter(animatedProgress),
-              child: (child != null)? _flipHorizontal(child!) : null
-            // child: (childBuilder != null)? childBuilder!(context, animatedProgress) : null
-          );
+              child: (child != null) ? _flipHorizontal(child!) : null
+              // child: (childBuilder != null)? childBuilder!(context, animatedProgress) : null
+              );
         },
       );
     }
@@ -211,8 +215,7 @@ class DashedCircularProgressBar extends StatelessWidget {
       // Create widget.
       return CustomPaint(
           foregroundPainter: _buildPainter(progress),
-          child: (child != null)? _flipHorizontal(child!) : null
-      );
+          child: (child != null) ? _flipHorizontal(child!) : null);
     }
   }
 
@@ -235,14 +238,13 @@ class DashedCircularProgressBar extends StatelessWidget {
         seekSize: seekSize,
         corners: corners,
         seekColor: seekColor,
-        circleCenterAlignment: circleCenterAlignment
-    );
+        circleCenterAlignment: circleCenterAlignment);
   }
 
   Widget _flipHorizontal(Widget child) {
     // Check for layout direction.
     // If ltr equal true.
-    if(ltr) {
+    if (ltr) {
       return child;
     }
     // If ltr equal false.
@@ -251,8 +253,7 @@ class DashedCircularProgressBar extends StatelessWidget {
       return Transform(
           alignment: Alignment.center,
           transform: Matrix4.rotationY(pi),
-          child: child
-      );
+          child: child);
     }
   }
 }
@@ -307,24 +308,23 @@ class _CircularProgressBarPainter extends CustomPainter {
   final Alignment circleCenterAlignment;
 
   // Constructor
-  const _CircularProgressBarPainter({
-    required this.progress,
-    required this.maxProgress,
-    required this.sweepAngle,
-    required this.startAngle,
-    required this.foregroundStrokeWidth,
-    required this.backgroundStrokeWidth,
-    required this.foregroundColor,
-    required this.backgroundColor,
-    required this.corners,
-    required this.foregroundGapSize,
-    required this.foregroundDashSize,
-    required this.backgroundGapSize,
-    required this.backgroundDashSize,
-    required this.seekSize,
-    required this.seekColor,
-    required this.circleCenterAlignment
-  });
+  const _CircularProgressBarPainter(
+      {required this.progress,
+      required this.maxProgress,
+      required this.sweepAngle,
+      required this.startAngle,
+      required this.foregroundStrokeWidth,
+      required this.backgroundStrokeWidth,
+      required this.foregroundColor,
+      required this.backgroundColor,
+      required this.corners,
+      required this.foregroundGapSize,
+      required this.foregroundDashSize,
+      required this.backgroundGapSize,
+      required this.backgroundDashSize,
+      required this.seekSize,
+      required this.seekColor,
+      required this.circleCenterAlignment});
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -346,8 +346,11 @@ class _CircularProgressBarPainter extends CustomPainter {
     // Center of progress bar.
     Point<double> centerPoint = _getCenterPoint(size);
     // Progress bar radius.
-    double minEdge = (circleCenterAlignment == Alignment.center)? min(size.width, size.height) / 2 : min(size.width, size.height);
-    double radius = minEdge - (max(foregroundStrokeWidth, backgroundStrokeWidth) / 2);
+    double minEdge = (circleCenterAlignment == Alignment.center)
+        ? min(size.width, size.height) / 2
+        : min(size.width, size.height);
+    double radius =
+        minEdge - (max(foregroundStrokeWidth, backgroundStrokeWidth) / 2);
     // Arcs starting angle in radian.
     double startAngleRadian = _degreeToRadian(startAngle - 90);
     // Arcs end angle in radian.
@@ -360,15 +363,8 @@ class _CircularProgressBarPainter extends CustomPainter {
     if (backgroundGapSize > 0 && backgroundDashSize > 0) {
       // Draw dashed arc.
       double backgroundSweepAngle = _degreeToRadian(sweepAngle);
-      _drawDashedArc(
-          canvas,
-          rect,
-          startAngleRadian,
-          backgroundSweepAngle,
-          backgroundPaint,
-          backgroundGapSize,
-          backgroundDashSize
-      );
+      _drawDashedArc(canvas, rect, startAngleRadian, backgroundSweepAngle,
+          backgroundPaint, backgroundGapSize, backgroundDashSize);
     } else {
       if (sweepAngle >= 360) {
         // Draw regular circle.
@@ -376,37 +372,20 @@ class _CircularProgressBarPainter extends CustomPainter {
       } else {
         // Draw regular arc.
         double backgroundSweepAngle = _degreeToRadian(sweepAngle);
-        canvas.drawArc(
-            rect,
-            startAngleRadian,
-            backgroundSweepAngle,
-            false,
-            backgroundPaint
-        );
+        canvas.drawArc(rect, startAngleRadian, backgroundSweepAngle, false,
+            backgroundPaint);
       }
     }
 
     // Draw foreground circle.
     if (foregroundGapSize > 0 && foregroundDashSize > 0) {
       // Draw dashed arc.
-      _drawDashedArc(
-          canvas,
-          rect,
-          startAngleRadian,
-          sweepAngleRadian,
-          foregroundPaint,
-          foregroundGapSize,
-          foregroundDashSize
-      );
+      _drawDashedArc(canvas, rect, startAngleRadian, sweepAngleRadian,
+          foregroundPaint, foregroundGapSize, foregroundDashSize);
     } else {
       // Draw regular arc.
-      canvas.drawArc(
-          Rect.fromCircle(center: center, radius: radius),
-          startAngleRadian,
-          sweepAngleRadian,
-          false,
-          foregroundPaint
-      );
+      canvas.drawArc(Rect.fromCircle(center: center, radius: radius),
+          startAngleRadian, sweepAngleRadian, false, foregroundPaint);
     }
 
     // Draw seek circle.
@@ -421,12 +400,14 @@ class _CircularProgressBarPainter extends CustomPainter {
       // Calculate seek size.
       double circleSize = _degreeToRadian((seekSize * 2) / 1000);
       // Draw seek.
-      canvas.drawArc(rect, startAngleRadian + sweepAngleRadian, circleSize, false, circlePaint);
+      canvas.drawArc(rect, startAngleRadian + sweepAngleRadian, circleSize,
+          false, circlePaint);
     }
   }
 
   // This method draw multiple dash to create a dashed arc.
-  void _drawDashedArc(Canvas canvas, Rect rect, double startAngleRadian, double sweepAngleRadian, Paint paint, double gapSize, double dashSize) {
+  void _drawDashedArc(Canvas canvas, Rect rect, double startAngleRadian,
+      double sweepAngleRadian, Paint paint, double gapSize, double dashSize) {
     // Calculate gap size between dashes in radian.
     double gap = _degreeToRadian(gapSize);
     // Calculate dash size in radian.
@@ -437,12 +418,7 @@ class _CircularProgressBarPainter extends CustomPainter {
     // Draw dashes.
     for (int i = 0; i < dashCounts; i++) {
       canvas.drawArc(
-          rect,
-          startAngleRadian + (gap + dash) * i,
-          dash,
-          false,
-          paint
-      );
+          rect, startAngleRadian + (gap + dash) * i, dash, false, paint);
     }
   }
 
@@ -453,23 +429,34 @@ class _CircularProgressBarPainter extends CustomPainter {
 
     // Determine the coordinates of the center of the progress bar.
     // Top
-    if(circleCenterAlignment == Alignment.topLeft) return const Point(0, 0);
-    if(circleCenterAlignment == Alignment.topCenter) return Point(hw, 0);
-    if(circleCenterAlignment == Alignment.topRight) return Point(size.width, 0);
+    if (circleCenterAlignment == Alignment.topLeft) return const Point(0, 0);
+    if (circleCenterAlignment == Alignment.topCenter) return Point(hw, 0);
+    if (circleCenterAlignment == Alignment.topRight) {
+      return Point(size.width, 0);
+    }
     // Center
-    if(circleCenterAlignment == Alignment.centerLeft) return Point(0, hh);
-    if(circleCenterAlignment == Alignment.center) return Point(hw, hh);
-    if(circleCenterAlignment == Alignment.centerRight) return Point(size.width, hh);
+    if (circleCenterAlignment == Alignment.centerLeft) return Point(0, hh);
+    if (circleCenterAlignment == Alignment.center) return Point(hw, hh);
+    if (circleCenterAlignment == Alignment.centerRight) {
+      return Point(size.width, hh);
+    }
     // Bottom
-    if(circleCenterAlignment == Alignment.bottomLeft) return Point(0, size.height);
-    if(circleCenterAlignment == Alignment.bottomCenter) return Point(hw, size.height);
-    if(circleCenterAlignment == Alignment.bottomRight) return Point(size.width, size.height);
+    if (circleCenterAlignment == Alignment.bottomLeft) {
+      return Point(0, size.height);
+    }
+    if (circleCenterAlignment == Alignment.bottomCenter) {
+      return Point(hw, size.height);
+    }
+    if (circleCenterAlignment == Alignment.bottomRight) {
+      return Point(size.width, size.height);
+    }
     // Default
     return const Point(0, 0);
   }
 
   @override
-  bool shouldRepaint(covariant _CircularProgressBarPainter oldDelegate) => oldDelegate.progress != progress;
+  bool shouldRepaint(covariant _CircularProgressBarPainter oldDelegate) =>
+      oldDelegate.progress != progress;
 
   // Convert Degree to Radian
   double _degreeToRadian(double angle) => angle * pi / 180;
