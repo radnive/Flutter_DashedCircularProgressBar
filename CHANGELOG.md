@@ -17,3 +17,7 @@
 ## 0.0.5: 24 October 2023
 
 * Upgrade Flutter version.
+
+## 0.0.6: 24 October 2023
+
+* Update README.md file.

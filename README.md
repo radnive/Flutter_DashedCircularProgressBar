@@ -5,13 +5,13 @@
     <img src="https://img.shields.io/github/license/radnive/flutter_dashedcircularprogressbar?logo=github" />
   </a>
   <a href="https://pub.dev/packages/dashed_circular_progress_bar/changelog">
-    <img src="https://img.shields.io/badge/version-0.0.4-blueviolet" />
+    <img src="https://img.shields.io/badge/version-0.0.6-blueviolet" />
   </a>
   <a href="https://docs.flutter.dev/development/tools/sdk/releases">
-    <img src="https://img.shields.io/badge/flutter-2.17.5-blue" />
+    <img src="https://img.shields.io/badge/flutter-3.13.5-blue" />
   </a>
   <a href="https://dart.dev/guides/whats-new">
-    <img src="https://img.shields.io/badge/dart-2.16.2-blue" />
+    <img src="https://img.shields.io/badge/dart-3.1.2-blue" />
   </a>
 </p>
 
@@ -31,7 +31,7 @@ Open source flutter package, Dashed circular progress bar for flutter apps.
 Add this line to the **pubspec.yaml** file below the dependencies:
 ```yaml
 dependencies:
-  dashed_circular_progress_bar: ^0.0.5
+  dashed_circular_progress_bar: ^0.0.6
 ```
 
 Now to use, import this package into the desired file as follows:

@@ -1,6 +1,6 @@
 name: dashed_circular_progress_bar
 description: Dashed circular progress bar shows the progress of a task in a circle, which can be customized in color, style, and shape.
-version: 0.0.5
+version: 0.0.6
 homepage: https://github.com/radnive/Flutter_DashedCircularProgressBar
 
 environment:
